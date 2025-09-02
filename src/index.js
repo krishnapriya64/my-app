@@ -1,10 +1,19 @@
+/**
+ * Entry point of the React application.
+ * Imports React and ReactDOM to render the main App component into the DOM.
+ * Also imports global styles and performance measuring utilities.
+ */
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.css'; // Global CSS styles
+import App from './App'; // Main App component
+import reportWebVitals from './reportWebVitals'; // Performance measuring utility
 
+// Create root element to render the React app
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Render the App component inside React.StrictMode for highlighting potential problems
 root.render(
   <React.StrictMode>
     <App />
